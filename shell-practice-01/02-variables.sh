@@ -1,10 +1,11 @@
 #!/bin/bash
 
-command1=$(ls /tmp)
+ls /this_directory_doesnot_exist
+status=$?
 
-if [ $command1 -eq 0 ]
-then 
-    echo "command executed sucessfully"
+if [ "status" == 0 ]
+then
+    echo "Directory exists"
 else
-    echo "command failed to execute"
+    echo "Directory doesnot exists"
 fi
