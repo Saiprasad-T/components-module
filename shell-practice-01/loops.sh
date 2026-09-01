@@ -1,6 +1,15 @@
 #!/bin/bash
 
-for i in 1 2 3 4 5 6
+check_directory() {
+    if [ -d "$1" ]
+    then 
+        echo "$1 exists"
+    else
+        echo "$1 doesnot exists"
+    fi
+}
+
+for dir in $@
 do
-    echo "$i"
+    check_directory "$dir"
 done
