@@ -22,14 +22,14 @@ else
     exit 1
 fi
 
-ls /tmp
+whoami
 status=$?
 
 if [ $status -eq 0 ]
 then
-    echo "/tmp is accessible"
+    echo "command sucessfully executed"
 else
-    echo "/tmp is unacessible"
+    echo "command unacesible"
     exit 1
 fi
 
