@@ -1,6 +1,6 @@
 #/bin/bash
 
-check_directory() {
+check_directory() { #Validation logic
     if [ -d "$1" ]
     then
         echo "$1 directory exists"
@@ -11,14 +11,14 @@ check_directory() {
     fi
 }
 
-for dir in "$@"
-do
-    check_directory "$dir"
-done
+check_directory "$dir" 
 
-if [ check_directory "$dir" -ne 0 ]
-then
-    echo "check successfull"
-else
-    echo "WARNING: check failed"
-fi
+for dir in "$@" #Processes all arguments
+do
+    if check_directory "$dir" 
+    then
+        echo "check successfull"
+    else
+        echo "WARNING: check failed"
+    fi
+done
