@@ -14,7 +14,7 @@ ERROR=$(find "$file" -type f -exec  grep -h "ERROR" {} + | wc -l)
 
 echo "Total number of ERROR lines from the log: $ERROR"
 
-if [ "$ERROR" -ge 10 ]
+if [ "$ERROR" -gt 10 ]
 then
     echo "ERROR count is high"
 fi
@@ -23,7 +23,7 @@ WARNING=$(find "$file" -type f -exec  grep -h "WARNING" {} + | wc -l)
 
 echo "Total number of WARNING lines from the log: $WARNING"
 
-if [ "$WARNING" -ge 10 ]
+if [ "$WARNING" -gt 10 ]
 then
     echo "WARNING count is high"
 fi
@@ -32,7 +32,7 @@ INFO=$(find "$file" -type f -exec grep -h "INFO" {} + | wc -l)
 
 echo "Total number of INFO lines from the log: $INFO"
 
-if [ "$INFO" -ge 10 ]
+if [ "$INFO" -gt 10 ]
 then
     echo "INFO count is high"
 fi
