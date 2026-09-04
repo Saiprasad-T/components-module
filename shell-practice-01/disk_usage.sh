@@ -7,6 +7,6 @@ then
     echo "Disk Usage: "$Disk_uasage""
     echo "Warning Disk usage is above 80%"
 else
-    echo "Disk Usage: $Disk_usage""
+    echo "Disk Usage: "$Disk_usage""
     echo "Disk Usage is normal"
 fi 
