@@ -17,7 +17,7 @@ date=$(date +%Y-%m-%d)
 
 dir=$(basename "$1")
 
-backup_name="${dir}_{date}.tar.gz"
+backup_name="${dir}_${date}.tar.gz"
 
 tar -czf "$backup_name" "$1"
 
