@@ -10,7 +10,7 @@ else
     exit 1
 fi
 
-ERROR=$(find "$file" -type f -exec -h grep "ERROR" {} + | wc -l)
+ERROR=$(find "$file" -type f -exec  grep -h "ERROR" {} + | wc -l)
 
 echo "Total number of ERROR lines from the log: $ERROR"
 
@@ -19,7 +19,7 @@ then
     echo "ERROR count is high"
 fi
 
-WARNING=$(find "$file" -type f -exec -h grep "WARNING" {} + | wc -l)
+WARNING=$(find "$file" -type f -exec  grep -h "WARNING" {} + | wc -l)
 
 echo "Total number of WARNING lines from the log: $WARNING"
 
