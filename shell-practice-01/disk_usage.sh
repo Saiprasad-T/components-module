@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Disk_uasage=$(df -h | awk 'NR>1 {print $6}')
+Disk_usage=$(df -h | awk 'NR>1 {print $6}')
 
 if [ $Disk_uasage -gt 80% ]
 then
