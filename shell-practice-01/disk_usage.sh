@@ -4,7 +4,7 @@ Disk_usage=$( df -h | awk 'NR>1 {print $5}' |  tr -d '%' )
 
 echo "DISK_UASAGE: $Disk_usage"
 
-if [ "$Disk_usage" -gt 80 ]
+if [ "$DISK_UASAGE" -gt 80 ]
 then
     echo "Disk Usage: "$Disk_uasage""
     echo "Warning Disk usage is above 80%"
