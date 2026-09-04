@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Disk_uasage=$(cd / | df -h | awk 'NR>1 {print $1,$6}')
+Disk_uasage=$(cd / | df -h | awk 'NR>1 {print $6}')
 
 if [ $Disk_uasage -gt 80 ]
 then
