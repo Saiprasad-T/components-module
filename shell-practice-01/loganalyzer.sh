@@ -28,7 +28,7 @@ then
     echo "WARNING count is high"
 fi
 
-INFO=$(find "$file" -type f -exec -h grep "INFO" {} + | wc -l)
+INFO=$(find "$file" -type f -exec grep -h "INFO" {} + | wc -l)
 
 echo "Total number of INFO lines from the log: $INFO"
 
