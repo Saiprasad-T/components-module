@@ -2,7 +2,7 @@
 
 file="$1"
 
-if [ "$file" -lt 0 ]
+if [ "$#" -lt 0 ]
 then 
     echo "please provide the log file"
     exit 1
