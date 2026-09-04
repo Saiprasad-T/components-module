@@ -21,5 +21,5 @@ backup_name="${dir}_{date}.tar.gz
 
 tar -czf "$backup_name" "$1"
 
-echo "backup successfully completed: "$1""
+echo "backup successfully completed: $1"
 
