@@ -1,6 +1,6 @@
 #!/bin/bash
 
-file="$1"
+file=/d/sakee/DevOps-All/Repos/shell-practice-01/application.log
 
 if [ -f "$file" ]
 then 
