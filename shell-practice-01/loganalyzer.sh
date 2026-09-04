@@ -12,7 +12,7 @@ fi
 
 ERROR=$(find "$file" -type f -exec -h grep "ERROR" {} + | wc -l)
 
-Echo "Total number of ERROR lines from the log: $ERROR"
+echo "Total number of ERROR lines from the log: $ERROR"
 
 if [ "$ERROR" -ge 10 ]
 then
@@ -21,7 +21,7 @@ fi
 
 WARNING=$(find "$file" -type f -exec -h grep "WARNING" {} + | wc -l)
 
-Echo "Total number of WARNING lines from the log: $WARNING"
+echo "Total number of WARNING lines from the log: $WARNING"
 
 if [ "$WARNING" -ge 10 ]
 then
@@ -30,7 +30,7 @@ fi
 
 INFO=$(find "$file" -type f -exec -h grep "INFO" {} + | wc -l)
 
-Echo "Total number of INFO lines from the log: $INFO"
+echo "Total number of INFO lines from the log: $INFO"
 
 if [ "$INFO" -ge 10 ]
 then
