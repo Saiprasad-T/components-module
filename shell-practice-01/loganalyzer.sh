@@ -2,6 +2,12 @@
 
 file="$1"
 
+if [ "$file" -eq 0 ]
+then 
+    echo "please provide the log file"
+    exit 1
+fi
+
 if [ -f "$file" ]
 then 
     echo "$file exists"
