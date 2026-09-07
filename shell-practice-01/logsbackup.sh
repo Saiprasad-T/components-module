@@ -16,6 +16,6 @@ fi
 date=$(date +%Y-%m-%d)
 
 
-tar -czvf backup-${date}.tar.gz" "$dir2"
+tar -czvf backup-${date}.tar.gz "$dir2"
 
 
