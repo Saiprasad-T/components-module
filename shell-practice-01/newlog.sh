@@ -4,7 +4,7 @@
 #argument validation
 
 
-if [-z "$@" ]
+if [ -z "$@" ]
 then
     echo "please provide log file path"
 fi
