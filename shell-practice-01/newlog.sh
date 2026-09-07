@@ -4,12 +4,13 @@
 #argument validation
 
 
-if [ -z "$@" ]
+if [ -z "$1" ]
 then
     echo "please provide log file path"
+    exit 1
 fi
 
-if [ -f "$@" ]
+if [ -f "$1" ]
 then
     echo "log file exists"
 else
