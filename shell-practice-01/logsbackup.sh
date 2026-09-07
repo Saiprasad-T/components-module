@@ -10,7 +10,7 @@ fi
 
 if [ -n "$2" ]
 then
-    "$Dir2=$1"
+    "$Dir2=$2"
 fi
 
 date=$(date +%Y-%m-%d)
