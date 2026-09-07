@@ -1,7 +1,7 @@
 #!/bin/bash
 
 Dir=/d/sakee/DevOps-All/Repos/shell-practice-01
-$dir2=/tmp/shell-practice
+dir2=/d/sakee/DevOps-All/Repos/shell-practice-01
 
 if [ -n "$1" ]
 then
