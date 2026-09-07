@@ -7,7 +7,7 @@
 if [ -z "$1" ]
 then
     echo "please provide log file path"
-    exit 1
+    
 fi
 
 if [ -f "$1" ]
